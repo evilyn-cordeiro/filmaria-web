@@ -1,4 +1,4 @@
-# FLAKS PROJECT
+# FIlMARIA PROJECT
 
 ## dependencies
 + styled-components@5.3.3
