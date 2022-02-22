@@ -32,7 +32,7 @@ export default function Saved() {
   return (
     <Container>
       <StyledTitle>Meus Filmes</StyledTitle>
-      {movies.length === 0 && <StyledSpn> Você não possui filmes salvos :(</StyledSpn>}
+      {movies.length === 0 && <StyledSpn> Você não possui filmes salvos...</StyledSpn>}
       {movies.map((item) => (
         <Stylelisting key={item.id}>
           <MovieStyle>{item.nome}</MovieStyle>

@@ -70,6 +70,14 @@ export const CommonButtonStyle = styled(CommonButton)`
 `;
 
 export const StyledSpn = styled.div`
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
+  color: white;
+  background-color: brown;
+  border-radius: 5px;
 
 `;
