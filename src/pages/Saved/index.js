@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   Container, StyleLink, StyledTitle,
   Stylelisting, BoxrigthStyle, MovieStyle, CommonButtonStyle,
+  StyledSpn,
 } from './style';
 
 export default function Saved() {
@@ -31,7 +32,7 @@ export default function Saved() {
   return (
     <Container>
       <StyledTitle>Meus Filmes</StyledTitle>
-      {movies.length === 0 && <span> Você não possui filmes salvos :(</span>}
+      {movies.length === 0 && <StyledSpn> Você não possui filmes salvos :(</StyledSpn>}
       {movies.map((item) => (
         <Stylelisting key={item.id}>
           <MovieStyle>{item.nome}</MovieStyle>

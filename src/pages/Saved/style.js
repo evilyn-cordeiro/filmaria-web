@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const StyledTitle = styled.div`
   width: 100%;
   margin-bottom: 15px;
-  font-size: 30px;
+  font-size: 40px;
   border-bottom: 1px solid brown;
   font-weight: bold;
 `;
@@ -67,4 +67,9 @@ export const CommonButtonStyle = styled(CommonButton)`
   &:hover{
     background: none;
   };
+`;
+
+export const StyledSpn = styled.div`
+  font-size: 20px;
+
 `;

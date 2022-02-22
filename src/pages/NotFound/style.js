@@ -3,26 +3,17 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  width: 400px;
-  height: 100px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 150px;
 `;
 
 export const ErrorStyle = styled.div`
   font-size: 50px;
   font-weight: bold;
-  color: brown;
-`;
-
-export const TextStyle = styled.div`
-  width: 250px;
-  font-size: 20px;
-  font-style: italic;
-  text-align: center;
   color: brown;
 `;
 
