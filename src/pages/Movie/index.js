@@ -60,21 +60,21 @@ export default function Movie() {
 
   /**
    * Function that saves api data
-   * ]in the browser's storange location.
+   * in the browser's storange location.
    */
   function handleSavedMovies() {
     /**
      * saves the data to local storange
      * and transfers it to a constant.
      */
-    const minhaLista = localStorage.getItem('filmes');
+    const mylist = localStorage.getItem('filmes');
     // transform string constant to JSON. Or empty array.
-    const filmesSalvos = JSON.parse(minhaLista) || [];
+    const savedmovies = JSON.parse(mylist) || [];
     /**
      * check if movie is saved based
      * on id action should be ignored.
      */
-    const hasFilme = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === movies.id);
+    const hasFilme = savedmovies.some((savedmovie) => savedmovie.id === movies.id);
     /**
      *check if movie is saved based
      *on id action should be ignored.
@@ -84,9 +84,9 @@ export default function Movie() {
       return;
     }
     // adds one more film in the storange location.
-    filmesSalvos.push(movies);
+    savedmovies.push(movies);
     // Saved to the browser's storange location.
-    localStorage.setItem('filmes', JSON.stringify(filmesSalvos));
+    localStorage.setItem('filmes', JSON.stringify(savedmovies));
     alert('Filme salvo com sucesso!');
   }
   return (
